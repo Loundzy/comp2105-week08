@@ -1,0 +1,1073 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO -->
+  <title>WebSlides: Making HTML presentations easy</title>
+  <meta name="description" content="WebSlides is the easiest way to make HTML presentations, portfolios, and landings. Just essential features.">
+
+  <!-- URL CANONICAL -->
+  <!-- <link rel="canonical" href="http://your-url.com/"> -->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext"
+    rel="stylesheet">
+
+  <!-- CSS WebSlides -->
+  <link rel="stylesheet" type='text/css' media='all' href="././static/css/webslides.css">
+
+  <!-- Optional - CSS SVG Icons (Font Awesome) -->
+  <link rel="stylesheet" type='text/css' media='all' href="./static/css/svg-icons.css">
+
+  <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+  <!-- FACEBOOK -->
+  <meta property="og:url" content="http://your-url.com/">
+  <!-- YOUR URL -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="WebSlides — Making HTML Presentations Easy">
+  <!-- EDIT -->
+  <meta property="og:description" content="WebSlides is about telling stories beautifully. Just the essential features. Good karma.">
+  <!-- EDIT -->
+  <meta property="og:updated_time" content="2017-01-04T17:20:50">
+  <!-- EDIT -->
+  <meta property="og:image" content="./static/images/share-webslides.jpg">
+  <!-- EDIT -->
+
+  <!-- TWITTER -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@webslides">
+  <!-- EDIT -->
+  <meta name="twitter:creator" content="@jlantunez">
+  <!-- EDIT -->
+  <meta name="twitter:title" content="WebSlides — Making HTML Presentations Easy">
+  <!-- EDIT -->
+  <meta name="twitter:description" content="WebSlides is about good karma. Just essential features. 120+ free slides ready to use.">
+  <!-- EDIT -->
+  <meta name="twitter:image" content="./static/images/share-webslides.jpg">
+  <!-- EDIT -->
+
+  <!-- FAVICONS -->
+  <link rel="shortcut icon" sizes="16x16" href="./static/images/favicons/favicon.png">
+  <link rel="shortcut icon" sizes="32x32" href="./static/images/favicons/favicon-32.png">
+  <link rel="apple-touch-icon icon" sizes="76x76" href="./static/images/favicons/favicon-76.png">
+  <link rel="apple-touch-icon icon" sizes="120x120" href="./static/images/favicons/favicon-120.png">
+  <link rel="apple-touch-icon icon" sizes="152x152" href="./static/images/favicons/favicon-152.png">
+  <link rel="apple-touch-icon icon" sizes="180x180" href="./static/images/favicons/favicon-180.png">
+  <link rel="apple-touch-icon icon" sizes="192x192" href="./static/images/favicons/favicon-192.png">
+
+  <!-- Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#333333">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js" integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+</head>
+
+<body>
+  <header role="banner">
+    <nav role="navigation">
+      <p class="logo">
+        <a href="index.html" title="WebSlides">WebSlides</a>
+      </p>
+      <ul>
+        <li class="github">
+          <a rel="external" href="https://github.com/avcoder/comp2105-week06" title="Github">
+            <svg class="fa-github">
+              <use xlink:href="#fa-github"></use>
+            </svg>
+            <em>WebSlides</em>
+          </a>
+        </li>
+        <li class="twitter">
+          <a rel="external" href="https://twitter.com/webslides" title="Twitter">
+            <svg class="fa-twitter">
+              <use xlink:href="#fa-twitter"></use>
+            </svg>
+            <em>@WebSlides</em>
+          </a>
+        </li>
+        <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <article id="webslides" class="horizontal">
+      <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+
+
+      <section>
+        <!-- Credit: image from unsplash.com -->
+        <span class="background" style="background-image:url('./static/images/animationmap2.jpg'); filter: opacity(.3);"></span>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap aligncenter">
+          <h1>
+            <strong>jQuery effects + animate</strong>
+          </h1>
+          <p class="text-intro">Week 6
+            <br/>COMP 2105
+
+          </p>
+          <p>
+            <a href="https://github.com/avcoder/comp2105-week06" class="button zoomIn" title="Download WebSlides for free">
+              <svg class="fa-github">
+                <use xlink:href="#fa-github"></use>
+              </svg>
+              Class Notes
+            </a>
+          </p>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="bg-apple">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap aligncenter">
+            <img src="./static/images/animationmap.jpg" alt="The world of web animation by Val head" style="width: 80%">
+            <p><a href="https://noti.st/valhead/L9LBoQ/choose-your-web-animation-adventure">https://noti.st/valhead/L9LBoQ/choose-your-web-animation-adventure</a></p>
+          </div>
+          <!-- .end .wrap -->
+        </section> 
+
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap size-50 aligncenter">
+          <h2>
+            <strong>To Do Today:</strong>
+          </h2>
+          <br />
+          <div class="bg-white shadow">
+            <ul class="flexblock reasons">
+              <li>
+                  <h2>Using animation to solve design problems</h2>
+                  <p>Now you know the basics of how to animate, learn the theory of when to animate</p>
+              </li>
+              <li>
+                <h2>
+                  jQuery Effects
+                </h2>
+                <p>Identify a series of fundamental Javascript-powered visual effects methods using jQuery</p>
+              </li>
+              <li>
+                <h2>jQuery animate</h2>
+                <p>Employ the jQuery animate() method to control motion-based element interactions + easing plugins</p>
+              </li>
+            </ul>
+          </div>
+          <!-- .end .bg-white shadow -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
+
+    <section class="bg-primary">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap size-50 aligncenter">
+          
+          <br />
+          <div class="bg-white shadow">
+            <ul class="flexblock specs">
+              <li>
+                <p class="text-intro"><mark>Using animation to <b>orient and give context</b></mark></p>
+              </li>
+              <li>
+                <p class="text-intro"><mark>Using animation to <b>direct focus and attention</b></mark></p>
+              </li>
+              <li>
+                <p class="text-intro"><mark>Using animation to <b>show cause and effect</b></mark></p>
+              </li>
+              <li>
+                <p class="text-intro"><mark>Using animation for <b>feedback</b></mark></p>
+              </li>
+              <li>
+                  <p class="text-intro">Using animation to <b>demonstrate</b></p>
+              </li>
+              <li>
+                  <p class="text-intro">Using animation to <b>express your brand</b></p>
+                </li>
+            </ul>
+            <p>
+              <cite>
+                <img class="avatar-56" src="https://pbs.twimg.com/profile_images/669650293747900416/GApkPcFY_bigger.jpg" alt="Avatar">Val Head.
+                <br/>
+                <a href="https://rosenfeldmedia.com/books/designing-interface-animation/">
+                  Head, V. (2016). Using animation to solve design problems In, <i>Designing interface animation: meaningful motion for user experience.</i> Brooklyn, NY: Rosenfeld.</a>
+              </cite>
+            </p>
+          </div>
+          <!-- .end .bg-white shadow -->
+        </div>
+        <!-- .end .wrap -->
+      </section>      
+
+
+      <section class="bg-primary">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-50 aligncenter">
+            <h2>Using animation to orient and give context</h2>
+            <br />
+            <div class="bg-white shadow">
+              <ul class="flexblock specs">
+                <li>
+                  <p class="text-intro">Create a mental model of what's out of view | <a href="https://vimeo.com/162715956">Wacom</a></p>
+                </li>
+                <li>
+                  <p class="text-intro">Orient interface layers | <a href="https://vimeo.com/162715955">Shopify*</a></p>
+                </li>
+                <li>
+                  <p class="text-intro">Orient the user to off-screen objects | <a href="https://vimeo.com/162715960">Cotton Bureau*</a></p>
+                </li>
+                <li>
+                  <p class="text-intro">Guide tasks | <a href="https://vimeo.com/162715966">Readme*</a></p>
+                </li>
+                <li>
+                  <p class="text-intro">Inform context changes | <a href="https://codepen.io/sdras/pen/qOdwdB">Sarah Drasner's codepen</a></p>
+                </li>   
+              </ul>
+              <small>* Still active on their current website</small>
+            </div>
+            <!-- .end .bg-white shadow -->
+          </div>
+          <!-- .end .wrap -->
+        </section>      
+
+
+        <section class="bg-primary">
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap size-50 aligncenter">
+              <h2>Using animation to direct focus / attention</h2>
+              <br />
+              <div class="bg-white shadow">
+                <ul class="flexblock specs">
+                  <li>
+                    <p class="text-intro">Display most important content | <a href="https://vimeo.com/162719982">Fitbit</a></p>
+                  </li>
+                  <li>
+                    <p class="text-intro">Direct the Eye with Motion | <a href="https://vimeo.com/162721300">Codepen Save button</a></p>
+                  </li>
+                  <li>
+                    <p class="text-intro">Hold attention with visual eye flow | <a href="https://vimeo.com/162719987">Twitter</a></p>
+                  </li>
+                </ul>
+              </div>
+              <!-- .end .bg-white shadow -->
+            </div>
+            <!-- .end .wrap -->
+          </section>             
+          
+          <section class="bg-primary">
+              <!--.wrap = container (width: 90%) -->
+              <div class="wrap size-50 aligncenter">
+                <h2>Using animation to show cause and effect</h2>
+                <br />
+                <div class="bg-white shadow">
+                  <ul class="flexblock specs">
+                    <li>
+                      <p class="text-intro">Guide tasks by hinting at affordances | <a href="https://vimeo.com/162721533">Clear app</a></p>
+                    </li>
+                    <li>
+                      <p class="text-intro">Cue by exposing additional actions | <a href="https://vimeo.com/162721550">Dropbox</a></p>
+                    </li>                    
+                    <li>
+                      <p class="text-intro">Cue the onboarding process | <a href="https://vimeo.com/162721537">Slack</a></p>
+                    </li>                    
+                    <li>
+                      <p class="text-intro">Preview the effect of an action | <a href="https://vimeo.com/162721545">Docs</a></p>
+                    </li>                                        
+                    
+                  </ul>
+                </div>
+                <!-- .end .bg-white shadow -->
+              </div>
+              <!-- .end .wrap -->
+            </section>                       
+
+            <section class="bg-primary">
+              <!--.wrap = container (width: 90%) -->
+              <div class="wrap size-50 aligncenter">
+                <h2>Using animation for feedback</h2>
+                <br />
+                <div class="bg-white shadow">
+                  <ul class="flexblock specs">
+                    <li>
+                      <p class="text-intro"> Animate effective error messages | <a href="https://vimeo.com/162722757">Stripe</a></p>
+                    </li>
+                    <li>
+                      <p class="text-intro"> Visually confirm tasks without losing your place | <a href="https://vimeo.com/162723547">Slides</a></p>
+                    </li>
+                    <li>
+                      <p class="text-intro"> Loaders convey progress making wait times feel shorter | <a href="https://vimeo.com/162723551">Surepayroll</a></p>
+                    </li>                                        
+                  </ul>
+                </div>
+                <!-- .end .bg-white shadow -->
+              </div>
+              <!-- .end .wrap -->
+            </section>                       
+
+
+
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <p data-height="500" data-theme-id="0" data-slug-hash="xYoxRN" data-default-tab="js,result" data-user="avcoder" data-embed-version="2"
+                data-pen-title="online exercise 7" class="codepen">See the Pen
+                <a href="https://codepen.io/avcoder/pen/xYoxRN/">online exercise 7</a> by A.V. (
+                <a href="https://codepen.io/avcoder">@avcoder</a>) on
+                <a href="https://codepen.io">CodePen</a>.</p>
+              <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h2>
+                .fadeIn&nbsp;&nbsp;.fadeOut
+              </h2>
+              <p class="text-intro">Fade animations involve rapidly making changes to an element's CSS opacity property.</p>
+              <pre><code><h5>// Hide all paragraphs using a fade out animation over 1.5 seconds
+$("p").fadeOut(1500);
+
+
+// Show all hidden divs using a fade in animation over 0.75 seconds
+$( "div.hidden" ).fadeIn( 750 );
+</h5></code></pre>
+
+              <p id="fade" style="width: 100px; height: 100px; background-color: green;"></p>
+              <script>
+                $(document).ready(function () {
+                  $("p#fade").click(function () {
+                    $(this).fadeOut(1500);
+                  });
+                });
+
+              </script>
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="size-70 aligncenter">
+
+            <!-- .end .column -->
+            <div class="column">
+              <h2>
+                .slideUp&nbsp;&nbsp;.slideDown
+              </h2>
+              <p class="text-intro">Slide animations are accomplished by rapidly making changes to an element's CSS height property.</p>
+              <pre><code><h4>// Hide all paragraphs using a slide up animation over 0.8 seconds
+$( "p" ).slideUp( 800 );
+  
+// Show all hidden divs using a slide down animation over 0.6 seconds
+$( "div.hidden" ).slideDown( 600 );
+  </h4></code></pre>
+
+              <p id="slide" style="width: 100px; height: 100px; background-color: green;"></p>
+              <script>
+                $(document).ready(function () {
+                  $("p#slide").click(function () {
+                    $(this).slideUp(800);
+                  });
+                });
+
+              </script>
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap size-50 aligncenter">
+          <h2>
+            Instead of passing in milliseconds,
+            <br/>you can also use:
+          </h2>
+          <br />
+          <div class="bg-white shadow">
+            <ul style="display: grid; list-style-type: none; grid-template-columns: 1fr 1fr 1fr;">
+              <li id="slow">
+                <h2 style="background: yellow; padding: 10px">"slow"</h2>
+              </li>
+              <li id="normal">
+                <h2 style="background: yellow; padding: 10px">"normal"</h2>
+              </li>
+              <li id="fast">
+                <h2 style="background: yellow; padding: 10px">"fast"</h2>
+              </li>
+            </ul>
+          </div>
+          <pre><code><h4>// Slowly hide all paragraphs
+$( "p" ).fadeOut( "slow" );
+  
+// Quickly show all divs that have the hidden style class
+$( "div.hidden" ).slideUp( "fast" );
+          </h4></code></pre>
+          <!-- .end .bg-white shadow -->
+        </div>
+        <script>
+          document.querySelector('#slow').addEventListener('click', () => {
+            $('#slow').fadeOut('slow');
+          });
+
+          document.querySelector('#normal').addEventListener('click', () => {
+            $('#normal').fadeOut('normal');
+          });
+
+          document.querySelector('#fast').addEventListener('click', () => {
+            $('#fast').fadeOut('fast');
+          });
+        </script>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="size-70 aligncenter">
+
+            <!-- .end .column -->
+            <div class="column">
+              <h2>
+                .hide&nbsp;&nbsp;.show
+              </h2>
+              <p class="text-intro">Hiding an element sets its CSS display property to none; the content will have zero width and height. You may
+                have noticed a combination of slide and fade effects when showing and hiding content.</p>
+              <pre><code><h4>// Instantaneously hide all paragraphs
+$( "p" ).hide();
+  
+// Instantaneously show all divs that have the hidden style class
+$( "div.hidden" ).show();
+    </h4></code></pre>
+
+              <p id="hide" style="width: 100px; height: 100px; background-color: green;"></p>
+              <script>
+                $(document).ready(function () {
+                  $("p#hide").click(function () {
+                    $(this).hide(800);
+                  });
+                });
+
+              </script>
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="size-70 aligncenter">
+
+            <!-- .end .column -->
+            <div class="column">
+              <h2>
+                .toggle
+              </h2>
+              <p class="text-intro">jQuery can also let you change a content's visibility based on its current visibility state. .toggle() will
+                show content that is currently hidden and hide content that is currently visible.</p>
+              <pre><code><h4>// Instantaneously toggle the display of all paragraphs
+$( "p" ).toggle();
+  
+// Slowly toggle the display of all images
+$( "img" ).toggle( "slow" );
+  
+// Toggle the display of all divs over 1.8 seconds
+$( "div" ).toggle( 1800 );
+      </h4></code></pre>
+
+              <p id="toggle" style="width: 100px; height: 100px; background-color: green;"></p>
+              <script>
+                $(document).ready(function () {
+                  $("p#toggle").click(function () {
+                    $(this).toggle(1800);
+                  });
+                });
+
+              </script>
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="size-70 aligncenter">
+
+            <!-- .end .column -->
+            <div class="column">
+              <h2>
+                .slideToggle &nbsp;&nbsp;.fadeToggle
+              </h2>
+              <p class="text-intro">.toggle() will use a combination of slide and fade effects, just as .show() and .hide() do. You can toggle
+                the display of content with just a slide or a fade using .slideToggle() and .fadeToggle().</p>
+              <pre><code><h4>
+// Toggle the display of all ordered lists over 1 second using slide up/down animations
+$( "ol" ).slideToggle( 1000 );
+  
+// Toggle the display of all blockquotes over 0.4 seconds using fade in/out animations
+$( "blockquote" ).fadeToggle( 1000 );
+        </h4></code></pre>
+
+              <p id="toggle2" style="display: inline-block; width: 100px; height: 100px; background-color: green;"></p>
+              <p id="toggle3" style="display: inline-block; width: 100px; height: 100px; background-color: purple;"></p>
+              <script>
+                $(document).ready(function () {
+                  $("p#toggle2").click(function () {
+                    $(this).slideToggle(1000);
+                  });
+                });
+
+                $(document).ready(function () {
+                  $("p#toggle3").click(function () {
+                    $(this).fadeToggle(1000);
+                  });
+                });
+
+              </script>
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="size-70 aligncenter">
+
+            <!-- .end .column -->
+            <div class="column">
+              <h2>
+                .stop :animated
+              </h2>
+              <p class="text-intro">.stop() will immediately terminate all animations running on the elements in your selection. Because :animated
+                is a jQuery extension and not part of the CSS specification...first select the elements using a pure CSS
+                selector, then use .filter(":animated").</p>
+              <pre><code><h4>
+// Create a button to stop all animations on the page:
+$( "button" ).click(function() {
+  $( "body *" ).filter( ":animated" ).stop();
+}); 
+          </h4></code></pre>
+              <button id="stopit" style="display: inline-block;">Stop</button>
+              <p id="fadestop" style="display: inline-block; width: 100px; height: 100px; background-color: purple;"></p>
+              <script>
+                $(document).ready(function () {
+                  $("#fadestop").click(function () {
+                    $(this).fadeOut(3000);
+                  });
+                  $("#stopit").click(function () {
+                    $("body *").filter(":animated").stop();
+                  });
+                });
+
+              </script>
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="size-80 aligncenter">
+
+            <!-- .end .column -->
+            <div class="column">
+              <h2>
+                Doing something after animation completes
+              </h2>
+              <p class="text-intro">A common mistake is assuming that the next method in your chain will wait until the animation runs to completion.</p>
+              <pre><code><h5>
+// Fade in all hidden paragraphs; then add a style class to them (not quite right)
+$( "p.hidden" ).fadeIn( 750 ).addClass( "lookAtMe" );
+            </h5></code></pre>
+              <p class="text-intro">To defer an action until after an animation has run to completion, you need a callback function as the second
+                argument
+              </p>
+              <pre>
+                  <code>
+                    <h5>
+// Fade in all hidden paragraphs; then add a style class to them (correct with animation callback)
+  $( "p.hidden" ).fadeIn( 750, function() {
+      // this = DOM element which has just finished being animated
+      $( this ).addClass( "lookAtMe" );
+  });
+                      </h5>
+                  </code>
+                </pre>
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="bg-apple">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <p data-height="500" data-theme-id="0" data-slug-hash="xYowjK" data-default-tab="js,result" data-user="avcoder" data-embed-version="2"
+                data-pen-title="in class exercise 7" data-preview="true" class="codepen">See the Pen
+                <a href="https://codepen.io/avcoder/pen/xYowjK/">in class exercise 7</a> by A.V. (
+                <a href="https://codepen.io/avcoder">@avcoder</a>) on
+                <a href="https://codepen.io">CodePen</a>.</p>
+              <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h2>
+                In-class Exercise 6
+              </h2>
+              <p class="text-intro">Apply
+                <a href="https://learn.jquery.com/effects/intro-to-effects/">jQuery's effects</a> to a Jeopardy themed page</p>
+                <p class="text-intro">Show me in class that you've got all 5 boxes animating via jQuery effects and you get a sticker.</p>
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
+
+      <section class="bg-secondary">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap size-50 frame">
+          <h2 class="text-serif aligncenter">
+            Submit in-class Exercise 6 + Break
+            <br/> (15 mins) + (15 mins)
+            
+          </h2>
+          <p class="text-symbols">* * *</p>
+
+          <ul>
+            <li>
+              <a href="https://icons8.com/articles/motion-design-funny-animations/" style="text-decoration:underline;">Motion design: 35 funny animations</a>
+            </li>
+            <li>
+              <a href="https://uxdesign.cc/animation-handoff-how-to-make-sure-what-you-design-is-what-the-developers-build-731547aae34e" style="text-decoration:underline;">Animation handoff: how to make sure what you design is what the developers build</a>
+            </li>
+            <li>
+              <a href="https://speckyboy.com/text-in-motion-effects/" style="text-decoration:underline;">Text in motion effects</a>
+            </li>
+<li><a href="https://www.ghacks.net/2018/10/18/how-to-install-progressive-web-apps-in-google-chrome/" style="text-decoration:underline;">How to install PWA in Google Chrome</a></li>
+
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <div style="background: #333; padding: 33px; position: relative; height: 200px">
+                <div id="lime1" style="position: absolute; height: 100px; width: 100px; background: lime; margin: 10px; border-radius: 50px"></div>
+              </div>
+              <button id="golime1">Run</button>
+
+              <script>
+                $(document).ready(function () {
+                  $('#golime1').click(function () {
+                    $("#lime1").animate({
+                      left: "+=100"
+                    }, 1000);
+                  });
+                });
+              </script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h4>
+                <code>.animate( properties [, duration ] )</code>
+              </h4>
+              <p class="text-intro">can only use
+                <strong>numeric</strong> CSS properties in .animate(); Duration is specified in
+                <strong>milliseconds</strong>. Directional properties (top, right, bottom, left) have no discernible effect on elements
+                if their position style property is static, which it is by default.</p>
+              <pre><code><h4>
+$("#lime1").animate({
+  left: "+=100"
+}, 1000);
+</h4></code>
+                </pre>
+              <p>What happens if you just say left: "100" ?</p>
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <div style="background: #333; padding: 33px; position: relative; height: 200px">
+                <div id="lime2" style="position: absolute; height: 100px; width: 100px; background: lime; margin: 10px; border-radius: 50px"></div>
+              </div>
+              <button id="golime2">Run</button>
+
+              <script>
+                $(document).ready(function () {
+                  $('#golime2').click(function () {
+                    $("#lime2").animate({
+                      left: "+=100"
+                    }, 1000, "linear");
+                  });
+                });
+              </script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h5>
+                <code>.animate( properties [, duration ] [, easing] )</code>
+              </h5>
+              <p class="text-intro">The only easing that jQuery has are swing (default), and linear. More easing functions are available with the
+                use of plug-ins.</p>
+              <pre><code><h4>
+  $("#lime2").animate({
+    left: "+=100"
+  }, 1000, "linear");
+  </h4></code>
+                  </pre>
+              <p>What happens if you just say left: "100" ?</p>
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <div style="background: #333; padding: 33px; position: relative; height: 200px">
+                <div id="lime3" style="position: absolute; height: 100px; width: 100px; background: lime; margin: 10px; border-radius: 50px"></div>
+              </div>
+              <button id="golime3">Run</button>
+
+              <script>
+                $(document).ready(function () {
+                  $('#golime3').click(function () {
+                    $("#lime3").effect("bounce", "slow");
+                  });
+                });
+              </script>
+<br><br><br><br>
+              <div style="background: #333; padding: 33px; position: relative; height: 200px">
+                <div id="lime3b" style="position: absolute; height: 100px; width: 100px; background: lime; margin: 10px; border-radius: 50px"></div>
+              </div>
+              <button id="golime3b">Run</button>
+
+              <script>
+                $(document).ready(function () {
+                  $('#golime3b').click(function () {
+                    $("#lime3b").animate({left: 100}).effect("bounce", "slow");
+                  });
+                });
+              </script>              
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h4>
+                Easing plugins : jQuery UI's .effect()
+              </h4>
+              <p class="text-intro">if jQuery UI
+                <a href="https://code.jquery.com/ui/">library</a> is included, then you can use
+                <a href="http://jqueryui.com/effect/">.effect()</a>
+              </p>
+              <pre><code><h4>
+$('#golime3').click(function () {
+  $("#lime3").effect("bounce", "slow");
+});
+
+$('#golime3b').click(function () {
+  $("#lime3b").animate({left: 100}).effect("bounce", "slow");
+});</h4></code>
+                    </pre>
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <div style="background: #333; padding: 33px; position: relative; height: 200px">
+                <div id="lime4" style="position: absolute; height: 100px; width: 100px; background: lime; margin: 10px; border-radius: 50px"></div>
+              </div>
+              <button id="golime4">Run</button>
+
+              <script>
+                $(document).ready(function () {
+                  $('#golime4').click(function () {
+                    $("#lime4").animate({
+                      left: "+=100"
+                    }, 1000, "easeOutElastic");
+                  });
+                });
+              </script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h4>
+                Robert Penner's jquery.easing Plugin
+              </h4>
+              <p class="text-intro">to use these custom plugins you must include the
+                <a href="http://gsgd.co.uk/sandbox/jquery/easing/">library</a> then use it in .animate() in the easing parameter.
+              </p>
+              <pre><code><h4>
+  $('#golime4').click(function () {
+    $("#lime4").animate({
+      left: "+=100"
+    }, 1000, "easeOutElastic");
+  });
+      </h4></code>
+                      </pre>
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <div style="background: #333; padding: 33px; position: relative; height: 200px">
+                <div id="lime5" style="position: absolute; height: 100px; width: 100px; background: lime; margin: 10px; border-radius: 50px"></div>
+              </div>
+              <button id="golime5">Run</button>
+
+              <script>
+                $(document).ready(function () {
+                  $('#golime5').click(function () {
+                    $("#lime5").animate({
+                      left: "+=100"
+                    }, 1000, function () {
+                      alert('animation completed');
+                    });
+                  });
+                });
+              </script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h4>
+                .animate() has callbacks
+              </h4>
+              <h5>
+                <code>.animate( properties [, duration ] [, easing ] [, <a style="text-decoration: underline" href="http://api.jquery.com/animate/">complete</a> ] )</code>
+              </h5>
+
+              <pre><code><h4>
+  $("#lime5").animate({
+    left: "+=100"
+  }, 1000, function () {
+    alert('animation completed');
+  });
+  </h4></code>
+                  </pre>
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="bg-apple">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <p data-height="500" data-theme-id="0" data-slug-hash="pLJeJN" data-default-tab="html,result" data-user="avcoder" data-embed-version="2"
+                data-pen-title="exercise using arrow keys and jquery's animate()" data-preview="true" class="codepen">See the Pen
+                <a href="https://codepen.io/avcoder/pen/pLJeJN/">exercise using arrow keys and jquery's animate()</a> by A.V. (
+                <a href="https://codepen.io/avcoder">@avcoder</a>) on
+                <a href="https://codepen.io">CodePen</a>.</p>
+              <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h3>
+                Frogger
+              </h3>
+              <p class="text-intro">Make frog move up per &uarr; keydown</p>
+              <p>
+                <a href="https://www.youtube.com/watch?v=l9fO-YuWPSk">See arcade game</a>
+              </p>
+
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <p data-height="500" data-theme-id="0" data-slug-hash="RMPGmr" data-default-tab="html,result" data-user="avcoder" data-embed-version="2"
+                data-pen-title="online exercise 8" data-preview="true" class="codepen">See the Pen
+                <a href="https://codepen.io/avcoder/pen/RMPGmr/">online exercise 8</a> by A.V. (
+                <a href="https://codepen.io/avcoder">@avcoder</a>) on
+                <a href="https://codepen.io">CodePen</a>.</p>
+              <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h3>Lab 6</h3>
+              <h4>Using .animate() to make nav bounce open and make arrow rotate</h4>
+
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="bg-secondary">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap size-50 frame">
+          <h2 class="text-serif aligncenter">
+            Do Lab 6 until end of class
+          </h2>
+          <p class="text-symbols">* * *</p>
+
+          <ul>
+            <li>
+              <a style="text-decoration:underline" href="http://hackeryou.com/everything-you-need-to-know-about-running-a-sole-proprietorship-business-with-wes-bos/">Everything I wish I knew running a sole proprietorship business</a>
+            </li>
+            <li>
+              <a href="https://codepen.io/ivorjetski/pen/xMJoYO" style="text-decoration:underline;">Pure CSS Still life - water and lemons</a>
+            </li>
+            <li>
+              <a href="https://blog.getbootstrap.com/2019/02/11/bootstrap-4-3-0/" style="text-decoration:underline;">Bootstrap cuts jQuery</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+      <section>
+        <!-- .wrap = container (width: 90%) -->
+        <div class=" wrap ">
+          <h2 class="alignleft ">
+            <strong>References</strong>
+          </h2>
+
+
+        </div>
+        <ol>
+          <li>https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/Using_the_Web_Animations_API</li>
+          <li>https://zellwk.com/blog/gsap/</li>
+          <li>http://www.creativebloq.com/how-to/get-started-with-gsap</li>
+          <li><a href="https://rosenfeldmedia.com/books/designing-interface-animation/">
+            Head, V. (2016). Using animation to solve design problems In, <i>Designing interface animation: meaningful motion for user experience.</i> Brooklyn, NY: Rosenfeld.</a></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+
+        <!-- .end .wrap -->
+      </section>
+
+    </article>
+    <!-- end article -->
+  </main>
+  <!-- end main -->
+
+  <!-- A global footer
+
+     <footer role="contentinfo ">
+      <div class="wrap ">
+        <p>An <a href="https://github.com/webslides/webslides ">open source solution</a>, by <a href="https://twitter.com/webslides ">@webslides</a>.</p>
+      </div>
+    </footer>  -->
+
+  <!-- Required -->
+  <script src="././static/js/webslides.js "></script>
+  <script>
+    window.ws = new WebSlides();
+  </script>
+
+  <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+  <script defer src="././static/js/svg-icons.js "></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js "></script>
+
+</body>
+
+</html>
