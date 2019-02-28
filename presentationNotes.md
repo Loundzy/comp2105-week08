@@ -73,6 +73,22 @@ TweenMax.from(ball, 2, {
 - Greensock provides a bunch of timing functions via Power0-4
 - Greensock provides other functions that you can't get via cubic-bezier: Bounce, Elastic
 
+# Easing visualizer
+
+- However, you can actually make your own timing functions
+- Greensock provides you a tool called Easing Visualizer
+- [click link]
+- so here you have Power0-4, Bounce, Elastic, Slo-mo, Custom
+- in addition you can click these underlined keywords and select something else: like from easeOut to easeIn
+- and it shows you with the ball how it's going to run
+- So take a couple minutes and experiment with your own easing and apply it to a previous codepen
+
+# Multiple tweens
+
+- read it
+
+# Make ball bounce
+
 ```js
 // STEP 3
 TweenMax.to(ball, 2, {
