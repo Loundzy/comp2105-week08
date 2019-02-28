@@ -266,6 +266,8 @@
                 It can be used safely (back to IE6!) to create animations
                 without jank
               </li>
+              <li class="text-intro">Greensock /GSAP is the company</li>
+              <li class="text-intro">TweenMax / TimelineMax is the library</li>
             </ul>
           </div>
           <!-- .end .wrap -->
@@ -572,20 +574,123 @@
           </div>
           <!-- .end .wrap -->
         </section>
-
-        <section class="">
+        <section class="bg-green">
           <!--.wrap = container (width: 90%) -->
-          <div class="wrap size-50 aligncenter">
-            <br />
-            <div class="bg-white shadow">
-              <p class="text-intro">Greensock /GSAP is the company</p>
-              <p class="text-intro">TweenMax / TimelineMax is the library</p>
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <img src="./static/images/power.png" alt="timing functions" />
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <h2>
+                  Timing Functions
+                </h2>
+                <p class="text-intro">
+                  GSAP provides you with many easing variables like Power0 to
+                  Power4
+                </p>
+                <pre><code><h5>
+      const vars = {
+        ease: Power0.easeOut
+      }
+            </h5></code></pre>
+                <p class="text-intro">
+                  In addition, GSAP gives you other easing variables: Bounce,
+                  Elastic, etc. that are more powerful than to cubic-bezier
+                </p>
+              </div>
+              <!-- .end .column -->
             </div>
-            <!-- .end .bg-white shadow -->
+            <!-- .end .grid -->
           </div>
           <!-- .end .wrap -->
         </section>
 
+        <section class="bg-apple">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p
+                  class="codepen"
+                  data-height="500"
+                  data-theme-id="0"
+                  data-default-tab="js,result"
+                  data-user="avcoder"
+                  data-slug-hash="rROgqx"
+                  style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;"
+                  data-pen-title="gsap intro ease"
+                >
+                  <span
+                    >See the Pen
+                    <a href="https://codepen.io/avcoder/pen/rROgqx/">
+                      gsap intro ease</a
+                    >
+                    by A.V. (<a href="https://codepen.io/avcoder">@avcoder</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span
+                  >
+                </p>
+                <script
+                  async
+                  src="https://static.codepen.io/assets/embed/ei.js"
+                ></script>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <h2>
+                  Timing functions
+                </h2>
+                <p class="text-intro">
+                  Experiment with different eases
+                </p>
+                <pre><code><h5>
+    const box = document.querySelector('.box')
+    TweenMax.from(box, 2, {
+      y: 1000,
+      ease: Power0.easeOut
+    })
+                    </h5></code></pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-green">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <img
+                  src="./static/images/visualizer.png"
+                  alt="Easing Visualizer Tool from Greensock"
+                />
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <h2>
+                  Easing Visualizer
+                </h2>
+                <p class="text-intro">
+                  To find the perfect timing-function for your tweens, <br />you
+                  can use the
+                  <a
+                    href="https://greensock.com/ease-visualizer"
+                    style="text-decoration: underline"
+                    >easing visualizer</a
+                  >
+                  that GSAP has created
+                </p>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
         <section class="bg-secondary">
           <!--.wrap = container (width: 90%) -->
           <div class="wrap size-50 frame">

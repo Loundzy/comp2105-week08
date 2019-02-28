@@ -67,3 +67,24 @@ TweenMax.from(ball, 2, {
   ease: Elastic.easeOut
 });
 ```
+
+# Timing functions
+
+- Greensock provides a bunch of timing functions via Power0-4
+- Greensock provides other functions that you can't get via cubic-bezier: Bounce, Elastic
+
+```js
+// STEP 3
+TweenMax.to(ball, 2, {
+  y: 200,
+  ease: Bounce.easeOut
+});
+
+// STEP 4 - create another tween (thus using multiple tweens) to make ball bounce down and across all while rotating
+TweenMax.to(ball, 3, {
+  x: 400,
+  rotation: 720,
+  transformOrigin: "50% 50%",
+  ease: "Power1.easeOut"
+});
+```
