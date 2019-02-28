@@ -33,7 +33,7 @@
 - rotation - notice there's no deg for degrees
 - read bottom sentence - so try your best to stick to transform and opacity, you can do a lot with just those 2
 
-# Tweening example
+# Tweening .to
 
 - here's our first TweenMax.to example
 - I'm grabbing the node element `document.querySelector('.box')`
@@ -43,9 +43,27 @@
 - Q: what does `{x: 400}` represent? A: destination via transform: translateX
 - because we're saying .to, whatever is in the parameters is where it's going to
 
-# Tweening your turn
+# .to
 
 - you're essentially copying my code on the slide
 - click on my codepen, I've already included TweenMax
 - give you 1 minute for that OR ask a person to say what the code is
 - once coded, take a step back and see how short/elegant this 1 line of code is compared to other CSS/jQuery solutions you may have done in the past
+
+# Tweening .from
+
+- read it
+
+# .from
+
+```js
+// STEP 1 - 'Grab' the DOM node and store it in 'ball'.
+const ball = document.querySelector(".ball");
+
+// STEP 2 - make ball enter from bottom of the screen, fading in
+TweenMax.from(ball, 2, {
+  y: 1000,
+  opacity: 0,
+  ease: Elastic.easeOut
+});
+```

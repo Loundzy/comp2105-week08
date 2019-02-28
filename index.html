@@ -422,7 +422,7 @@
               <!-- .end .column -->
               <div class="column">
                 <h2>
-                  Tweening
+                  Tweening .to
                 </h2>
                 <p class="text-intro">
                   Move the box from the left to the right over 2 seconds.
@@ -470,7 +470,7 @@
               <!-- .end .column -->
               <div class="column">
                 <h2>
-                  Tweening
+                  .to
                 </h2>
                 <p class="text-intro">
                   Move the ball from the left to the right over 2 seconds.
@@ -501,7 +501,7 @@
               <!-- .end .column -->
               <div class="column">
                 <h2>
-                  Tweening
+                  Tweening .from
                 </h2>
                 <p class="text-intro">
                   Move the box from the bottom to the top over 2 seconds.
@@ -527,70 +527,19 @@
             <div class="grid vertical-align">
               <div class="column">
                 <p
-                  data-height="500"
-                  data-theme-id="0"
-                  data-slug-hash="wmvOyB"
-                  data-default-tab="result"
-                  data-user="avcoder"
-                  data-embed-version="2"
-                  data-pen-title="gsap 1 - start tweening"
-                  data-preview="true"
-                  class="codepen"
-                >
-                  See the Pen
-                  <a href="https://codepen.io/avcoder/pen/wmvOyB/"
-                    >gsap 1 - start tweening</a
-                  >
-                  by A.V. ( <a href="https://codepen.io/avcoder">@avcoder</a>)
-                  on <a href="https://codepen.io">CodePen</a>.
-                </p>
-                <script
-                  async
-                  src="https://static.codepen.io/assets/embed/ei.js"
-                ></script>
-              </div>
-              <!-- .end .column -->
-              <div class="column">
-                <h2>
-                  Tweening
-                </h2>
-                <p class="text-intro">
-                  Move the ball from the bottom to the top over 2 seconds.
-                </p>
-                <pre><code><h5>
-  const box = document.querySelector('.box')
-  TweenMax.from(box, 2, {
-    y: 100,
-    opacity: 0
-  })
-                  </h5></code></pre>
-              </div>
-              <!-- .end .column -->
-            </div>
-            <!-- .end .grid -->
-          </div>
-          <!-- .end .wrap -->
-        </section>
-
-        <section>
-          <!--.wrap = container (width: 90%) -->
-          <div class="wrap">
-            <div class="grid vertical-align">
-              <div class="column">
-                <p
                   class="codepen"
                   data-height="500"
                   data-theme-id="0"
                   data-default-tab="js,result"
                   data-user="avcoder"
-                  data-slug-hash="wmvOyB"
+                  data-slug-hash="NJGmpj"
                   style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;"
-                  data-pen-title="gsap intro"
+                  data-pen-title="gsap intro .from"
                 >
                   <span
                     >See the Pen
-                    <a href="https://codepen.io/avcoder/pen/wmvOyB/">
-                      gsap intro</a
+                    <a href="https://codepen.io/avcoder/pen/NJGmpj/">
+                      gsap intro .from</a
                     >
                     by A.V. (<a href="https://codepen.io/avcoder">@avcoder</a>)
                     on <a href="https://codepen.io">CodePen</a>.</span
@@ -604,21 +553,18 @@
               <!-- .end .column -->
               <div class="column">
                 <h2>
-                  .to
+                  .from
                 </h2>
                 <p class="text-intro">
-                  Tweening is the process of changing a value over time to
-                  create an animation.
+                  Move the ball from the bottom to the top over 2 seconds.
                 </p>
-                <pre><code><h5>// tween x position from current to 300 over 2 seconds
-TweenMax.to(".logo",2,{x:400});
-  </h5></code></pre>
-
-                <p
-                  id="fade"
-                  style="width: 100px; height: 100px; background-color: green;"
-                ></p>
-                <script></script>
+                <pre><code><h5>
+  const box = document.querySelector('.box')
+  TweenMax.from(box, 2, {
+    y: 1000,
+    opacity: 0
+  })
+                  </h5></code></pre>
               </div>
               <!-- .end .column -->
             </div>
