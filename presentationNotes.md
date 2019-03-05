@@ -107,6 +107,16 @@ TweenMax.to(ball, 3, {
 
 - Note that the Bounce easing looks way better than what we could probably come up with using custom cubic-bezier
 
+# Break
+
+# Why SVG
+
+# Use inline SVG to support animation and interaction
+
+# Path Data / Curve commands
+
+# Changing SVG attributes with TweenMax
+
 # Changing tweens to TimelineMax
 
 - this feature is what all the animation experts are loving
@@ -117,6 +127,8 @@ TweenMax.to(ball, 3, {
 - so here in our example it's moving 200px to the right then 200px down
 - imagine if you were to try to accomplish the same thing in jQuery, you'd have to use callback functions to move it down after the first animation completed
 - so I can see Greensock's attractiveness to their syntax
+
+# Codepen exercise
 
 ```js
 // STEP 1 - Declare new Timeline
