@@ -113,12 +113,21 @@ TweenMax.to(ball, 3, {
 
 - there are a lot of reasons why modern websites are using svg
 - crisp: whether it's using the new retina screens or whether the image is blown up/shrunk down, it'll be crisp
-- responsive: unlike bitmap images, svg images are drawn with mathematics
+- responsive: unlike bitmap images, svg images are drawn with mathematics, so it'll always be sharp no matter screen size
 - is like HTML in a sense that it has a DOM structure
+- [click Example svgs] to show Amazon svg code
+- less HTTP requests - so instead of your website having to do 3 roundtrips for 3 images, you can have one roundtrip
+- small filesize (5MB of images vs less for SVG)
+- accessible
 
 # Use inline SVG to support animation and interaction
 
+- the secret is to use svg INLINE
+- don't use <img src="whatever.svg"> since animation won't work with that
+
 # Path Data / Curve commands
+
+-
 
 # Changing SVG attributes with TweenMax
 
