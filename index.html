@@ -238,12 +238,12 @@
                 </li>
                 <li>
                   <h2>
-                    stagger
+                    .set, .stagger (staggerFrom, staggerTo, staggerFromTo)
                   </h2>
-                  <p>cyclestagger</p>
+                  <p></p>
                 </li>
                 <li>
-                  <h2>Timeline</h2>
+                  <h2>using a timeline</h2>
                   <p></p>
                 </li>
               </ul>
@@ -333,7 +333,7 @@
               </li>
               <li class="text-intro">
                 <code>vars</code> is an object of the properties you want to
-                animate
+                animate.  <a style="text-decoration: underline" href="https://github.com/sdras/svg-workshop/blob/master/gsap-cheatsheet.js">GSAP cheatsheet</a>
               </li>
             </ul>
           </div>
@@ -741,14 +741,14 @@
                   data-theme-id="0"
                   data-default-tab="js,result"
                   data-user="avcoder"
-                  data-slug-hash="rROgqx"
+                  data-slug-hash="xBwoLp"
                   style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;"
-                  data-pen-title="gsap intro ease"
+                  data-pen-title="gsap intro multiple tweens"
                 >
                   <span
                     >See the Pen
-                    <a href="https://codepen.io/avcoder/pen/rROgqx/">
-                      gsap intro ease</a
+                    <a href="https://codepen.io/avcoder/pen/xBwoLp/">
+                      gsap intro multiple tweens</a
                     >
                     by A.V. (<a href="https://codepen.io/avcoder">@avcoder</a>)
                     on <a href="https://codepen.io">CodePen</a>.</span
@@ -785,45 +785,243 @@ TweenMax.to(ball, 3, {
           </div>
           <!-- .end .wrap -->
         </section>
-
         <section class="bg-secondary">
           <!--.wrap = container (width: 90%) -->
           <div class="wrap size-50 frame">
             <h2 class="text-serif aligncenter">
               Submit in-class Exercise 6 + Break
               <br />
-              (15 mins) + (15 mins)
+              (5 mins) + (20 mins)
             </h2>
             <p class="text-symbols">* * *</p>
 
             <ul>
               <li>
                 <a
-                  href="https://icons8.com/articles/motion-design-funny-animations/"
+                  href="https://dev.to/azaleamollis/solid-design-principles-building-stable-and-flexible-systems--2ph7"
                   style="text-decoration:underline;"
-                  >Motion design: 35 funny animations</a
+                  >S.O.L.I.D principles</a
                 >
               </li>
               <li>
                 <a
-                  href="https://uxdesign.cc/animation-handoff-how-to-make-sure-what-you-design-is-what-the-developers-build-731547aae34e"
+                  href="https://theblog.adobe.com/animation-ux-how-animation-adds-meaning-ui/"
                   style="text-decoration:underline;"
-                  >Animation handoff: how to make sure what you design is what
-                  the developers build</a
+                  >Val Head: how animation adds meaning</a
                 >
               </li>
               <li>
                 <a
-                  href="https://speckyboy.com/text-in-motion-effects/"
+                  href="https://simpleicons.org/"
                   style="text-decoration:underline;"
-                  >Text in motion effects</a
+                  >Simple Icons</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="bg-green">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <img
+                  src="./static/images/timeline.gif"
+                  alt="using timeline to move box right then down"
+                />
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <h2>
+                  Changing Tweens to TimelineMax
+                </h2>
+                <p class="text-intro">
+                  TimelineMax lets you chain tweens together. When you do so,
+                  the second tween starts after the first tween completes; the
+                  third tween starts after the second tween completes.
+                </p>
+
+                <p class="text-intro">
+                  To create a TimelineMax instance, you write
+                  <br />
+                  <code>const tl = new TimelineMax({})</code>
+                </p>
+
+                <p class="text-intro">
+                  Once you’ve created a timeline, treat the new tl variable as
+                  TweenMax and continue doing whatever you did previously.
+                </p>
+                <pre><code><h5>
+    const tl = new TimelineMax({})
+    tl.to(box, 1, {x: 200})
+    tl.to(box, 1, {y: 200})
+    </h5></code></pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-apple">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p
+                  class="codepen"
+                  data-height="500"
+                  data-theme-id="0"
+                  data-default-tab="js,result"
+                  data-user="avcoder"
+                  data-slug-hash="jJbgOm"
+                  style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;"
+                  data-pen-title="gsap intro timeline"
+                >
+                  <span
+                    >See the Pen
+                    <a href="https://codepen.io/avcoder/pen/jJbgOm/">
+                      gsap intro timeline</a
+                    >
+                    by A.V. (<a href="https://codepen.io/avcoder">@avcoder</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span
+                  >
+                </p>
+                <script
+                  async
+                  src="https://static.codepen.io/assets/embed/ei.js"
+                ></script>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <h2>
+                  Convert to TimelineMax
+                </h2>
+                <p class="text-intro">
+                  Use a timeline to accomplish the same bouncing ball
+                </p>
+                <pre><code><h5>const tl = new TimelineMax({});
+tl.add("start");
+tl.to(ball, 3, {
+  x: 600,
+  rotation: 720,
+  transformOrigin: "50% 50%",
+  ease: "Power1.easeOut"
+});
+tl.to(
+  ball, 2, {
+    y: 400,
+    ease: "Bounce.easeOut"
+  },
+  "start"
+);</h5></code></pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="grid vertical-align">
+  
+              <div class="column">
+                <div style="background: #333; padding: 33px">
+                  <div class="boxes" style="height: 100px; width: 100px; background: green; margin: 10px;"></div>
+                  <div class="boxes" style="height: 100px; width: 100px; background: lightblue;  margin: 10px;"></div>
+                  <div class="boxes" style="height: 100px; width: 100px; background: orange;  margin: 10px;"></div>
+                </div>
+                <button id="go6">Run</button>
+                <script>
+                  $(document).ready(function () {
+                    $('#go6').click(function () {
+                      const tl6 = new TimelineMax();
+                      tl6.staggerFrom(".boxes", 1, { x: 600 }, 2);
+                    });
+                  });
+                </script>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <h4>
+                  .staggerFrom(target, duration, {vars}, staggerAmount);
+                </h4>
+                <p class="text-intro">Tweens an array of targets, but staggers their start times by a specified amount of time, creating an evenly-spaced
+                  sequence with a surprisingly small amount of code.</p>
+                <pre><code><h4>
+  tl
+   .staggerFrom(".boxes", 1, { x: 600 }, 2);
+        </h4></code></pre>
+  
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+  
+        <section class="bg-apple">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="grid vertical-align">
+  
+              <div class="column">
+                <p data-height="500" data-theme-id="0" data-slug-hash="KozWop" data-default-tab="result" data-user="avcoder" data-embed-version="2"
+                  data-pen-title="staggerfrom()" class="codepen">See the Pen
+                  <a href="https://codepen.io/avcoder/pen/KozWop/">staggerfrom()</a> by A.V. (
+                  <a href="https://codepen.io/avcoder">@avcoder</a>) on
+                  <a href="https://codepen.io">CodePen</a>.</p>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <h3>
+                  Experiment with .staggerFrom()
+                </h3>
+  
+  
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-secondary">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-50 frame">
+            <h2 class="text-serif aligncenter">
+              Work on Lab 6 until end of class
+            </h2>
+            <p class="text-symbols">* * *</p>
+
+            <ul>
+              <li>
+                <a
+                  href="https://www.smashingmagazine.com/2019/02/introduction-to-webbluetooth/"
+                  style="text-decoration:underline;"
+                  >WebBluetooth</a
                 >
               </li>
               <li>
                 <a
-                  href="https://www.ghacks.net/2018/10/18/how-to-install-progressive-web-apps-in-google-chrome/"
+                  href="https://speckyboy.com/creating-liquid-effects-on-the-web/"
                   style="text-decoration:underline;"
-                  >How to install PWA in Google Chrome</a
+                  >Liquid Effects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://speckyboy.com/text-masking/"
+                  style="text-decoration:underline;"
+                  >Text masking</a
                 >
               </li>
             </ul>

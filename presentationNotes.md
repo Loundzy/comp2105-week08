@@ -104,3 +104,56 @@ TweenMax.to(ball, 3, {
   ease: "Power1.easeOut"
 });
 ```
+
+- Note that the Bounce easing looks way better than what we could probably come up with using custom cubic-bezier
+
+# Changing tweens to TimelineMax
+
+- this feature is what all the animation experts are loving
+- use `tl` as a shortform for timeline
+- once you've created that timeline, you treat that new tl variable as if it TweenMax and continue doing what you were doing previously
+- whatever you consecutively put after, that's your timeline
+- whereas before, where we had to use callback functions in jQuery, now you don't, which is a more natural way of thinking of things
+- so here in our example it's moving 200px to the right then 200px down
+- imagine if you were to try to accomplish the same thing in jQuery, you'd have to use callback functions to move it down after the first animation completed
+- so I can see Greensock's attractiveness to their syntax
+
+```js
+// STEP 1 - Declare new Timeline
+const tl = new TimelineMax({});
+tl.add("start");
+// STEP 2 - Convert all TweenMax to your timeline variable
+tl.to(ball, 3, {
+  x: 600,
+  rotation: 720,
+  transformOrigin: "50% 50%",
+  ease: "Power1.easeOut"
+});
+
+// STEP 3 - animation has sequentially changed.  make it look as it did before by adding
+// a label via tl.add('myLabel'), then refer to it as the 4th parameter in your tl
+tl.to(
+  ball,
+  2,
+  {
+    y: 400,
+    ease: "Bounce.easeOut"
+  },
+  "start"
+);
+```
+
+# staggerFrom
+
+- read it
+
+# Experiment stagger codepen
+
+```js
+TweenMax.staggerFrom(
+  "p",
+  0.3,
+  { opacity: 0, scale: 0.5, x: -80, ease: Back.easeOut.config(3) },
+  0.1
+);
+```
