@@ -127,7 +127,12 @@ TweenMax.to(ball, 3, {
 
 # Path Data / Curve commands
 
--
+- refer to Amazon svg code from 2 slides ago
+- notice capital M, c, v, z -- what does that mean?
+- all of those letters mean something
+- capital letters refer to absolute, whereas small case refers to relative
+- click [codepen link] - someone designed this in codepen to help you understand how svgs know what to draw
+- create line: notice at bottom right it actually writes that path svg code
 
 # Changing SVG attributes with TweenMax
 
