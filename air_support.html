@@ -600,7 +600,7 @@
         master.paused(!master.paused());
       });
 
-      master.add(allAppears());
+      master.add(intro());
       master.add("start");
       master.add(hotairBalloon());
       master.add(clouds(), "start");
@@ -609,7 +609,7 @@
       master.add(waving(), "+=40");
       master.add(grass(), "start");
 
-      function allAppears() {
+      function intro() {
         const tl = new TimelineMax();
 
         tl.staggerFrom(
