@@ -111,11 +111,43 @@ TweenMax.to(ball, 3, {
 
 # Why SVG
 
+- there are a lot of reasons why modern websites are using svg
+- crisp: whether it's using the new retina screens or whether the image is blown up/shrunk down, it'll be crisp
+- responsive: unlike bitmap images, svg images are drawn with mathematics
+- is like HTML in a sense that it has a DOM structure
+
 # Use inline SVG to support animation and interaction
 
 # Path Data / Curve commands
 
 # Changing SVG attributes with TweenMax
+
+```html
+<svg width="600" height="400" viewBox="0 0 600 400">
+  <path
+    id="tail"
+    d="M 300 200 Q 400 200 500 150"
+    stroke="#000"
+    fill="none"
+    stroke-width="10"
+  ></path>
+</svg>
+
+<!--
+M 300 200 Q 400 200 500 250 
+-->
+```
+
+```js
+const tail = document.querySelector("#tail");
+
+TweenMax.to(tail, 0.3, {
+  attr: { d: "M 300 200 Q 400 200 500 250 " },
+  repeat: Infinity,
+  yoyo: true,
+  ease: Elastic.ease
+});
+```
 
 # Changing tweens to TimelineMax
 
